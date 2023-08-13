@@ -1,0 +1,45 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Todo List</title>
+    <!--CSS-->
+    <link rel="stylesheet" href="style.css" type="text/css" />
+
+    <!--JS-->
+    <script src="https://kit.fontawesome.com/ce18010ff9.js" crossorigin="anonymous"></script>
+    <script src='script.js' defer></script>
+</head>
+
+<body>
+    <div class='container'>
+        <h1><i class="fa-solid fa-list"></i> TO-DO LIST</h1>
+        <div class='input'>
+            <input id="text" value="" placeholder="Add something..."></input>
+            <button id="addElement"><i class="fa-solid fa-plus"></i></button>
+        </div>
+        <ul>
+
+        </ul>
+        <div class="end"></div>
+    </div>
+
+    <!--TEMPLATES-->
+    <template id="templateUnchecked">
+            <li>
+                <input class="checkbox " type = 'checkbox'></input>
+                <p class="elementToDo"></p> 
+                <p class="deleteButton">Delete</p>
+            </li>
+    </template>
+    <template id="templateChecked">
+            <li>
+                <input class="checkbox checked" type = 'checkbox'></input>
+                <p class="elementToDo"></p> 
+                <p class="deleteButton">Delete</p>
+            </li>
+    </template>
+</body>
+
+</html>
